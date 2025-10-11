@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bfbfbf;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #999;
+}
+
+.Head2 {
+    color: #003366;
+}
+
+
+
+header {
+  background: linear-gradient(to right, #3d7ebd, #1d5f9d);
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+header h1 a {
+  color: #b3d7ff;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: lightblue;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #1d5f9d, #144b7b);
+}
+
+nav a:hover {
+  background: linear-gradient(to bottom, #508ecb, #1d5f9d);
+  color: yellow;
+}
+
+main {
+  display: flex;
+  padding: 10px;
+}
+
+.left, .right {
+  padding: 10px;
+}
+
+h2 {
+  color: #1a1a1a;
+  border-bottom: 2px solid #003366;
+}
+
+p.justified {
+  text-align: justify;
+}
+
+.red {
+  color: red;
+}
+
+/* Gallery layout */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card {
+  width: 30%;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border: 2px solid #003366;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #cc0000;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+footer img {
+  height: 60px;
+  margin-right: 10px;
+}
