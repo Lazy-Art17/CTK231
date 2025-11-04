@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+
+.grid-container {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+grid-template-columns: repeat(12,5fr);
+  gap: 20px;
+}
+/* Navigation Bar */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  display: block;
+  background-color: #2da9ff;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-links li a:hover {
+  background-color: #1d7fd9;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2da9ff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Art Projects Section */
+.projects {
+  padding: 30px 20px;
+}
+
+.projects h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery .item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li a {
+    width: 100%;
+  }
+}
